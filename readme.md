@@ -3,7 +3,7 @@
 
 2.  Generate the authentication.
 
-3.  Create a database seed that inserts 50 users
+3.  Create a database seed that inserts 50 users 
 
 4.  Create a new model called car and add 3 properties to it: Make, Model, and year
 
@@ -15,7 +15,7 @@
 
 8.  Create a controller, route, and view to show an about page and add it to the main menu of your site.
 
-Unit tests - Each unit test uses an Assertion to check if it was done.
+##Unit tests - Each unit test uses an Assertion to check if it was done.
 
 1.  Write a feature test to check if the register return a 200 status code.
 
