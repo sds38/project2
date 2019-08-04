@@ -11,7 +11,7 @@ class CheckCarYearTypeTest extends TestCase
      *
      * @return void
      */
-    public function testCarYearType()
+    public function testYearCheckTest()
     {
 
         factory(Cars::class)->create();
