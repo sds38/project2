@@ -5,6 +5,7 @@ namespace Tests\Feature;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use App\User;
 
 class ContactFormTest extends TestCase
 {
@@ -13,15 +14,12 @@ class ContactFormTest extends TestCase
      *
      * @return void
      */
-    public function testContactFormPage()
+    public function testContact()
     {
-        //just creating a new user in case of no user
-        factory(User::class)->create();
-
+        //kept getting 404 error, had to change code
         $user = User::first();
-        $this->be($user); //You are now authenticated
-        $response = $this->get('/contact-us');
+        $this->be($user);
+        $response = $this->get('/contact');
         $response->assertStatus(200);
-
     }
 }

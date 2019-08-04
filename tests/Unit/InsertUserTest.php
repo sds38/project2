@@ -5,6 +5,8 @@ namespace Tests\Feature;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Support\Str;
+use App\User;
 
 class InsertUserTest extends TestCase
 {
@@ -16,8 +18,8 @@ class InsertUserTest extends TestCase
     public function testInsertUser()
     {
         $data =  [
-            'name' => str_random(5),
-            'email' => str_random(7).'@test.com',
+            'name' => Str::random(5),
+            'email' => Str::random(7).'@test.com',
             'password' => '$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm', // secret is the hashed MD5 for this string
             'remember_token' => str_random(9),
         ];
