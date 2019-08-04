@@ -6,7 +6,7 @@ use Carbon\Carbon;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-class InsertCarTest extends TestCase
+class CarInsertTest extends TestCase
 {
     /**
      * A basic test example.

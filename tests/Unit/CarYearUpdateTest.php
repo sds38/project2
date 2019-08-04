@@ -4,7 +4,7 @@ use App\Car;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-class UpdateCarYearTest extends TestCase
+class CarYearUpdateTest extends TestCase
 {
     /**
      * A basic test example.
