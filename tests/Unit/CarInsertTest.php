@@ -13,7 +13,7 @@ class CarInsertTest extends TestCase
      *
      * @return void
      */
-    public function testInsertCar()
+    public function testCarInsert()
     {
         $data =  [
             'make' => 'honda',

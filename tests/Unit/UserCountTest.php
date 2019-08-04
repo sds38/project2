@@ -11,7 +11,7 @@ class UserCountTest extends TestCase
      *
      * @return void
      */
-    public function testCountUsersIs50()
+    public function testUserCount()
     {
         $userCount = 50;
         $users = factory(User::class, 50 )->create();

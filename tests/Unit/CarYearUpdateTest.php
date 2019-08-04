@@ -11,7 +11,7 @@ class CarYearUpdateTest extends TestCase
      *
      * @return void
      */
-    public function testUpdateCarYear()
+    public function testCarYearUpdate()
     {
         $data['year'] = '2000';
 
