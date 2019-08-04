@@ -15,7 +15,7 @@ class CountCarTest extends TestCase
     {
         $carCount = 50;
 
-        $cars = factory(Car::class, $carCount )->create();
+        $cars = factory(Cars::class, $carCount )->create();
         $this->assertLessThanOrEqual( $carCount, \count( $cars ) );
         $this->assertTrue(true);
     }

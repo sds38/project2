@@ -4,18 +4,18 @@ use App\Cars;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-class CheckCarYearTypeTest extends TestCase
+class YearCheckTest extends TestCase
 {
     /**
      * A basic test example.
      *
      * @return void
      */
-    public function testYearCheckTest()
+    public function testCarYearType()
     {
 
         factory(Cars::class)->create();
         $car =  Cars::first();
-        $this->assertTrue(is_int($car->year));
+        $this->assertIsInt(($car->year));
     }
 }
